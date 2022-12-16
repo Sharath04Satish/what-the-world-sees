@@ -9,7 +9,7 @@ const ProfileNavigation = (props) => {
   return (
     <div className="flex mt-6 gap-6">
       <Tooltip title="Twitter">
-        <a href="https://twitter.com/iAmNerfect" target={"_blank"}>
+        <a href={process.env.REACT_APP_TWITTER_PROFILE} target={"_blank"}>
           <img
             className="cursor-pointer social-icon"
             src={twitter}
@@ -18,7 +18,7 @@ const ProfileNavigation = (props) => {
         </a>
       </Tooltip>
       <Tooltip title="500px">
-        <a href="https://500px.com/sharaths1998" target={"_blank"}>
+        <a href={process.env.REACT_APP_500PX_PROFILE} target={"_blank"}>
           <img
             className="cursor-pointer social-icon"
             src={fivehundrerpx}
@@ -27,7 +27,7 @@ const ProfileNavigation = (props) => {
         </a>
       </Tooltip>
       <Tooltip title="Github">
-        <a href="https://github.com/Sharath04Satish" target={"_blank"}>
+        <a href={process.env.REACT_APP_GITHUB_PROFILE} target={"_blank"}>
           <img
             className="cursor-pointer social-icon"
             src={github}
@@ -36,7 +36,7 @@ const ProfileNavigation = (props) => {
         </a>
       </Tooltip>
       <Tooltip title="Dribbble">
-        <a href="https://dribbble.com/sharathezihan" target={"_blank"}>
+        <a href={process.env.REACT_APP_DRIBBBLE_PROFILE} target={"_blank"}>
           <img
             className="cursor-pointer social-icon"
             src={dribbble}
