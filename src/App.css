@@ -1,0 +1,53 @@
+.App {
+  text-align: center;
+}
+
+.object {
+  animation: MoveUpDown 1s ease-in-out infinite;
+  position: relative;
+  left: 0;
+  bottom: 0;
+}
+
+@keyframes MoveUpDown {
+  0%, 100% {
+    bottom: 0;
+  }
+  50% {
+    bottom: 7px;
+  }
+}
+.title-1 {
+  font-family: 'Inter-Bold';
+}
+.title-2 {
+  font-family: 'Inter-SemiBold';
+}
+.social-icon {
+  transition: transform 1s ease-in-out;
+}
+.social-icon:hover {
+  transform: rotate(360deg);
+}
+.header-icon {
+  transition: transform .4s;
+}
+.header-icon:hover {
+  transform: scale(1.1); 
+}
+.profile-picture {
+  transition: transform .4s;
+  transform: translateX(0px);
+  position: relative;
+  left: 8px;
+}
+.profile-picture:hover {
+  transform: translateX(10px);
+}
+.preview {
+  filter: blur(10px);
+  clip-path: inset(0);
+}
+.rendered {
+  filter: blur(0px);
+}

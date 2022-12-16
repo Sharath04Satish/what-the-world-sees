@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Inter';
+  src: local('Inter'), url(./assets/fonts/Inter-Regular.woff2) format('woff2');
+}
+@font-face {
+  font-family: 'Inter-Bold';
+  src: local('Inter-Bold'), url(./assets/fonts/Inter-Bold.woff2) format('woff2');
+}
+@font-face {
+  font-family: 'Inter-SemiBold';
+  src: local('Inter-SemiBold'), url(./assets/fonts/Inter-SemiBold.woff2) format('woff2');
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', 'Inter-Bold', 'Inter-SemiBold', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
