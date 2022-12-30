@@ -51,3 +51,18 @@
 .rendered {
   filter: blur(0px);
 }
+::-webkit-scrollbar {
+  width: 10px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgb(75 85 99);
+  border-radius: 20px;
+}
+::-webkit-scrollbar-thumb {
+  background: rgb(209 213 219);
+  border-radius: 20px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(156 163 175);
+}

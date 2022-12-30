@@ -4,10 +4,11 @@ import ProfileNavigation from "../components/ProfileNavigation";
 import profilePicture from "../assets/images/profilePicture.jpg";
 import profilePictureCompressed from "../assets/images/profilePictureCompressed.jpg";
 import ImagePreviewer from "../components/ImagePreviewer";
+import LocationOn from "@mui/icons-material/LocationOn";
 
 const HomePage = (props) => {
   return (
-    <div class="grid grid-cols-2 h-[37.5rem]">
+    <div class="grid grid-cols-2" style={{ height: "calc(100vh - 50px)" }}>
       <div className="flex flex-col justify-center px-12 py-10">
         <Tooltip
           title="That's how you say hello in Kannada"
@@ -26,7 +27,7 @@ const HomePage = (props) => {
         </h2>
         <ProfileNavigation />
       </div>
-      <div class="text-justify bg-gray-100 flex items-center justify-center">
+      <div class="text-justify bg-gray-100 flex items-center justify-center flex-col">
         <ImagePreviewer
           imageSrc={profilePicture}
           placeholderSrc={profilePictureCompressed}
@@ -36,6 +37,10 @@ const HomePage = (props) => {
           placement="left"
           toolTipTitle="Well, hello there"
         />
+        <div className="mt-8 flex">
+          <LocationOn />
+          <p>Mysuru, India</p>
+        </div>
       </div>
     </div>
   );
