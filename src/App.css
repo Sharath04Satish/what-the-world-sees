@@ -66,3 +66,9 @@
 ::-webkit-scrollbar-thumb:hover {
   background: rgb(156 163 175);
 }
+.album-tile {
+  transition: transform 1s ease-in-out;
+}
+.album-tile:hover {
+  transform: scale(1.03); 
+}

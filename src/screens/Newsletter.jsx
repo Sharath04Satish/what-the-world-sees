@@ -16,7 +16,7 @@ const Newsletter = (props) => {
   return (
     <div class="grid grid-cols-2" style={{ height: "calc(100vh - 50px)" }}>
       {selectedItem ? (
-        <div className="flex py-16 px-20 flex-col overflow-y-scroll">
+        <div className="flex py-12 px-20 flex-col overflow-y-scroll">
           <div className="flex items-center">
             <ArrowBackIos
               className="mb-3 mr-4 cursor-pointer"
@@ -93,7 +93,7 @@ const Newsletter = (props) => {
           </div>
         </div>
       ) : (
-        <div className="flex flex-col px-12 py-16">
+        <div className="flex flex-col px-12 py-12">
           <h1 className="text-[3rem] title-1 font-bold text-left text-gray-600">
             Newsletter 🗞️
           </h1>
@@ -121,10 +121,7 @@ const Newsletter = (props) => {
         </div>
       )}
 
-      {/* Create a state which stores whether a newsletter is opened or not.
-      When it's true, render the newsletter in the left section with a scrollbar which
-      contains the newsletter heading, a picture, date and the content */}
-      <div class="text-justify bg-gray-100 flex py-16 px-20 flex-col overflow-y-scroll">
+      <div class="text-justify bg-gray-100 flex py-12 px-20 flex-col overflow-y-scroll">
         <h1 className="text-[2rem] title-1 font-bold text-left text-gray-600">
           Previous Editions 🗞️
         </h1>
