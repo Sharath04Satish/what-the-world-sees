@@ -14,6 +14,7 @@ const ImagePreviewer = (props) => {
             src={src}
             alt={props.alt}
             width={props.width}
+            height={props.height}
           />
         </Tooltip>
       )}
